@@ -32,7 +32,10 @@ This project is a backend implementation for a College Management System using D
 
   password: admin@123
 
-Through this potal, faculty can be added. 
+Through this portal, faculty can be added. 
+
+---
+
 
 ## API Endpoints
 
