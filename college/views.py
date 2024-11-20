@@ -9,7 +9,7 @@ from .authentication import CustomFacultyJWTAuthentication
 from .models import Faculty, Student, Subject
 from .serializers import FacultySerializer, StudentSerializer,SubjectSerializer
 from .authentication import (CustomFacultyJWTAuthentication, CustomJWTAuthentication)
-
+from django.shortcuts import render
 
 # Faculty Login API View
 class FacultyLoginAPIView(APIView):
@@ -327,6 +327,11 @@ def create_superuser(request):
         return HttpResponse(f'Superuser created: {user.username}')
     else:
         return HttpResponse('Superuser already exists')
+
+
+def home(request):
+    return render(request, 'index.html')
+
 
     
 
