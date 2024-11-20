@@ -26,13 +26,10 @@ This project is a backend implementation for a College Management System using D
 | **Subject**  | `name`                                                          |
 
 ---
-### Admin Portal Credentials
-
-  username: admin
-
-  password: admin@123
-
-Through this portal, faculty can be added. 
+### Note
+1. Protected Routes are enabled in frontend
+2. Notfound component can handle wrong routes
+3. JWT token auth
 
 ---
 
