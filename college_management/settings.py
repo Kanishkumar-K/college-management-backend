@@ -57,6 +57,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",  
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://college-management-backend-wz9p.onrender.com',
+    'https://college-management-system-portal-frontend.vercel.app/'
+]
+
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
