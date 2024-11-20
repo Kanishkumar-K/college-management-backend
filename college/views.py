@@ -309,6 +309,25 @@ class SubjectListView(APIView):
         subjects = Subject.objects.all()
         serializer = SubjectSerializer(subjects, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
+from django.contrib.auth.models import User
+from django.http import HttpResponse
+
+def create_superuser(request):
+    username = 'admin'
+    email = 'admin@example.com'
+    password = 'admin@123' 
+    if not User.objects.filter(username=username).exists():
+        user = User.objects.create_superuser(
+            username=username,
+            email=email,
+            password=password
+        )
+        return HttpResponse(f'Superuser created: {user.username}')
+    else:
+        return HttpResponse('Superuser already exists')
+
     
 
 
