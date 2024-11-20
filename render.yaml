@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: django-app
+    env: python
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: "waitress-serve --host=0.0.0.0 --port=10000 college_management.wsgi:application"
+    envVars:
+      - key: DJANGO_SUPERUSER_USERNAME
+        value: "admin"
+      - key: DJANGO_SUPERUSER_EMAIL
+        value: "admin@gmail.com"
+      - key: DJANGO_SUPERUSER_PASSWORD
+        value: "admin@123"
+      - key: DJANGO_SETTINGS_MODULE
+        value: "college_management.settings"  # Replace with your project settings module
+    deployment:
+      postDeployCommand: |
+        python manage.py makemigrations  # Create migration files
+        python manage.py migrate  # Apply migrations
+        python manage.py createsuperuser --noinput  # Create superuser if not already created
