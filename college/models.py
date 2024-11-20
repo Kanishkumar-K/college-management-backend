@@ -52,7 +52,7 @@ class Student(models.Model):
     password = models.CharField(max_length=255) 
     faculties = models.ManyToManyField(Faculty, related_name='students', blank=True)
     subjects = models.ManyToManyField(Subject, related_name='enrolled_students', blank=True) 
-    profile_picture = models.ImageField(upload_to='profile_pics/')
+    profile_picture = models.ImageField(upload_to='profile_pics/', null=False, default='default-profile.jpg')
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
