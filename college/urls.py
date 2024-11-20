@@ -6,7 +6,7 @@ from .views import (AssignedStudentFaculty, AssignStudentToFacultyView,
                     StudentCreateAPIView, StudentDetailsAPIView,
                     StudentEditAPIView, StudentLoginAPIView, SubjectListView,
                     UpdateStudentAPIView, ViewAllStudentsAPIView,
-                    ViewEnrolledSubjects)
+                    ViewEnrolledSubjects, create_superuser)
 
 urlpatterns = [
 
@@ -28,6 +28,8 @@ urlpatterns = [
 
     # subject api
     path('subjects/', SubjectListView.as_view(), name='subject-list'),
+    path('create-superuser/', create_superuser, name='create-superuser'),
+
 
 
 ]
