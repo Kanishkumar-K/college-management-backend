@@ -54,12 +54,12 @@ ALLOWED_HOSTS = ['*']
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173",  
+    "https://college-management-system-frontend.vercel.app/",  
 ]
 
 CSRF_TRUSTED_ORIGINS = [
     'https://college-management-backend-wz9p.onrender.com',
-    'https://college-management-system-portal-frontend.vercel.app/'
+    'https://college-management-system-frontend.vercel.app/'
 ]
 
 
