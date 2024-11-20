@@ -1,1 +1,1 @@
-web: gunicorn college_management.wsgi:application --bind 0.0.0.0:10000
+waitress-serve --host=127.0.0.1 --port=10000 college_management.wsgi:application
