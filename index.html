@@ -57,9 +57,14 @@
             text-decoration: none;
             color: #00796b;
             font-weight: bold;
+            font-size: 16px; /* Increased font size */
+            padding: 6px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         td a:hover {
-            color: #004d40;
+            color: #fff;
+            background-color: #00796b;
         }
         .footer {
             margin-top: 40px;
@@ -68,6 +73,21 @@
             color: white;
             text-align: center;
             font-size: 14px;
+        }
+        .credentials {
+            margin-top: 30px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .credentials h3 {
+            font-size: 24px;
+            color: #2d3e50;
+        }
+        .credentials p {
+            font-size: 18px;
+            color: #333;
         }
     </style>
 </head>
@@ -78,8 +98,8 @@
 </div>
 
 <div class="container">
-    <h2>Welcome to the Backend System</h2>
-    <p>Below are the available routes for your application:</p>
+    <h2>CMS - Backend Page</h2>
+    <p>Below is the link to the Admin Panel for managing the backend system:</p>
 
     <table>
         <thead>
@@ -90,24 +110,20 @@
         </thead>
         <tbody>
             <tr>
-                <td><a href="/admin/">Admin Panel</a></td>
+                <td><a href="https://college-management-backend-wz9p.onrender.com/admin" target="_blank">Admin Panel</a></td>
                 <td>Access the admin interface for managing the backend system.</td>
-            </tr>
-            <tr>
-                <td><a href="/api/">API Endpoint</a></td>
-                <td>Interact with the backend API to fetch or submit data.</td>
-            </tr>
-            <tr>
-                <td><a href="/static/">Static Files</a></td>
-                <td>Access static files like images, CSS, and JavaScript.</td>
             </tr>
         </tbody>
     </table>
+
+    <div class="credentials">
+        <h3>Admin Credentials</h3>
+        <p>Email: <strong>admin@gmail.com</strong></p>
+        <p>Password: <strong>admin@123</strong></p>
+    </div>
 </div>
 
-<div class="footer">
-    <p>&copy; 2024 College Management System</p>
-</div>
+
 
 </body>
 </html>
