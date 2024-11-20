@@ -97,3 +97,18 @@ Start the development server to run the application locally:
 ```bash
 python manage.py runserver
 ```
+
+Screenshots:
+
+![Screenshot 2024-11-20 195306](https://github.com/user-attachments/assets/18141ecd-132b-4593-8592-92d058c4ab46)
+
+![Screenshot 2024-11-20 195256](https://github.com/user-attachments/assets/2910fe68-2906-48cd-87ed-cc12712bedae)
+
+![Screenshot 2024-11-20 195238](https://github.com/user-attachments/assets/3f9ab380-1259-4761-ac47-5ebc3e80d2a9)
+
+![Screenshot 2024-11-20 195324](https://github.com/user-attachments/assets/6b8e4e49-3a11-4251-9336-10b377116b21)
+
+![Screenshot 2024-11-20 195229](https://github.com/user-attachments/assets/d3b46368-bd1d-44a2-9bf5-89a2fec1f9a4)
+
+
+
