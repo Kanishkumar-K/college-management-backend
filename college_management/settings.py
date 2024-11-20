@@ -134,11 +134,16 @@ SIMPLE_JWT = {
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-
 DATABASES = {
-    'default': dj_database_url.config(default=os.environ.get('DATABASE_URL'))
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'college_management_88yp',  # Database name
+        'USER': 'college_management_88yp_user',  # Database user
+        'PASSWORD': 'ROi3Q1ZZgjEU7pAgxkhpk3ljcOSS6TRt',  # Database password
+        'HOST': 'dpg-csur4j1u0jms73atedc0-a',  # Database host
+        'PORT': '5432',  # Database port
+    }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
