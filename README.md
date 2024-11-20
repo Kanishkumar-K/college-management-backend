@@ -27,7 +27,7 @@ This project is a backend implementation for a College Management System using D
 
 ---
 ### Note
-1. Protected Routes are enabled in frontend
+1. Protected Routes are enabled
 2. Notfound component can handle wrong routes
 3. JWT token auth
 
