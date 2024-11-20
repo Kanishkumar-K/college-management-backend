@@ -30,7 +30,10 @@ This project is a backend implementation for a College Management System using D
 1. Protected Routes are enabled
 2. Notfound component can handle wrong routes
 3. JWT token auth
-
+4. A faculty can teach 1 subject only
+5. A faculty can have many students
+6. A student can enrol many subjects
+   
 ---
 
 
