@@ -15,6 +15,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 # Project: College Management System
 
 import os
+import dj_database_url
+
 from datetime import timedelta
 from pathlib import Path
 from decouple import config  
