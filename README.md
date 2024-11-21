@@ -3,6 +3,10 @@
 This project is a backend implementation for a College Management System using Django REST Framework (DRF). It supports role-based access for faculties and students, allowing efficient management of user data, authentication, and subjects.
 
 ---
+## Note 
+
+Use valid email for student creation.
+
 
 ## Features
 
@@ -11,8 +15,8 @@ This project is a backend implementation for a College Management System using D
 | **Faculty Login**              | Faculty can log in using email and password to access the system.                                |
 | **Student Management**         | Faculty can create, view, update, and assign students.                                           |
 | **Student Login**              | Students can log in using email and password to manage their profiles.                           |
-| **Subjects Management**        | Students can enroll in subjects; faculty can manage subject assignments.                        |
-| **Password Management**        | Both faculty and students can change passwords securely.                                         |
+| **Subjects Management**        | Students can enroll in subjects; faculty can manage subject.                                |
+| **Password Management**        | Students can change passwords securely.                                         |
 | **Role-based Access**          | Access control enforced for faculty and student actions via custom JWT authentication.           |
 
 ---
