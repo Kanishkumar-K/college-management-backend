@@ -24,7 +24,7 @@ urlpatterns = [
     path('student/details/', StudentDetailsAPIView.as_view(), name='student-details'),
     path('student/edit/', StudentEditAPIView.as_view(), name='student-edit'),
     path('enroll-in-subject/', EnrollInSubjectView.as_view(), name='enroll-in-subject'),
-    path('student/change-password/', ChangePassword.as_view(), name='student_edit'),
+    path('student/change-password/', ChangePassword.as_view(), name='change-password'),
 
     # subject api
     path('subjects/', SubjectListView.as_view(), name='subject-list'),
