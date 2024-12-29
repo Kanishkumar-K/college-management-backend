@@ -286,7 +286,7 @@ class ChangePassword(APIView):
     permission_classes = [IsAuthenticated]
     authentication_classes=[CustomJWTAuthentication]
 
-    def patch(self, request):
+    def put(self, request):
         if 'password' not in request.data or 'new_password' not in request.data:
             return Response({"error": "Please provide both old and new password"}, status=status.HTTP_400_BAD_REQUEST)
 
