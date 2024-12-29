@@ -48,10 +48,10 @@ Use valid email for student creation.
 | **Endpoint**             | **Method** | **Description**                               |
 |--------------------------|------------|-----------------------------------------------|
 | `/faculty/login`         | POST       | Login for faculty members.                   |
-| `/faculty/students/`     | GET        | View all students.                           |
-| `/faculty/students/`     | POST       | Create a new student record.                 |
-| `/faculty/students/:id`  | PUT        | Update student details by ID.                |
-| `/faculty/assign/:id`    | POST       | Assign a student to a faculty.               |
+| `/students/`     | GET        | View all students.                           |
+| `/student/create`     | POST       | Create a new student record.                 |
+| `student/update/<int:student_id>/`  | PUT        | Update student details by ID.                |
+| `assign-student/<int:student_id>/`    | POST       | Assign a student to a faculty.               |
 
 ### Student APIs
 
@@ -60,16 +60,15 @@ Use valid email for student creation.
 | `/student/login`         | POST       | Login for students.                          |
 | `/student/details/`      | GET        | View logged-in student details.              |
 | `/student/edit/`         | PUT        | Edit student profile.                        |
-| `/student/subjects/`     | POST       | Enroll in subjects.                          |
-| `/student/subjects/:id`  | GET        | View enrolled subjects by student ID.        |
+| `/enroll-in-subject/`     | POST       | Enroll in subjects.                          |
 
 ### Miscellaneous APIs
 
 | **Endpoint**             | **Method** | **Description**                               |
 |--------------------------|------------|-----------------------------------------------|
 | `/subjects/`             | GET        | List all subjects.                           |
-| `/password/change`       | PATCH      | Change user password.                        |
-| `/admin/create`          | GET        | Create a predefined superuser (admin).       |
+| `/student/change-password/`       | PATCH      | Change user password.                        |
+| `/create-superuser`          | GET        | Create a predefined superuser (admin).       |
 
 ---
 
