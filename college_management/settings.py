@@ -138,7 +138,7 @@ DATABASES = {
         'NAME': 'college_mgmt',  # Database name
         'USER': 'college_mgmt_user',  # Database user
         'PASSWORD': '2XYNdmq0L4OgrpT58cNTG1ylti2LkJb7',  # Database password
-        'HOST': 'dpg-ctol24lumphs73cf8ctg-a',  # Database host
+        'HOST': 'dpg-ctol24lumphs73cf8ctg-a.oregon-postgres.render.com',  # Database host
         'PORT': '5432',  # Database port
     }
 }
