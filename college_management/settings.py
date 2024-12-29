@@ -135,10 +135,10 @@ SIMPLE_JWT = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'college_mgmt',  # Database name
-        'USER': 'college_mgmt_user',  # Database user
-        'PASSWORD': '2XYNdmq0L4OgrpT58cNTG1ylti2LkJb7',  # Database password
-        'HOST': 'dpg-ctol24lumphs73cf8ctg-a.oregon-postgres.render.com',  # Database host
+        'NAME': 'college_management_p5sm',  # Database name
+        'USER': 'college_management_p5sm_user',  # Database user
+        'PASSWORD': 'tePT0Tk4OJeKerDHRZ4DIdCu8o9ke2rL',  # Database password
+        'HOST': 'dpg-ctolellsvqrc73b9bmdg-a',  # Database host
         'PORT': '5432',  # Database port
     }
 }
