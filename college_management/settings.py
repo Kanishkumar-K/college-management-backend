@@ -15,8 +15,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 # Project: College Management System
 
 import os
-import dj_database_url
-
 from datetime import timedelta
 from pathlib import Path
 from decouple import config  
@@ -137,10 +135,10 @@ SIMPLE_JWT = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'college_management_88yp',  # Database name
-        'USER': 'college_management_88yp_user',  # Database user
-        'PASSWORD': 'ROi3Q1ZZgjEU7pAgxkhpk3ljcOSS6TRt',  # Database password
-        'HOST': 'dpg-csur4j1u0jms73atedc0-a',  # Database host
+        'NAME': 'college_mgmt',  # Database name
+        'USER': 'college_mgmt_user',  # Database user
+        'PASSWORD': '2XYNdmq0L4OgrpT58cNTG1ylti2LkJb7',  # Database password
+        'HOST': 'dpg-ctol24lumphs73cf8ctg-a',  # Database host
         'PORT': '5432',  # Database port
     }
 }
